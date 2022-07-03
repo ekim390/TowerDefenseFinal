@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: TEAL;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.EndGame">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="599.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="tryAgainBtn" layoutX="475.0" layoutY="311.0" mnemonicParsing="false" onAction="#pressTryAgainButton" prefHeight="80.0" prefWidth="204.0" style="-fx-background-color: WHITE;" text="Try Again?" textAlignment="CENTER" textFill="#007abc">
+               <font>
+                  <Font name="Sinhala MN" size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitBtn" layoutX="475.0" layoutY="409.0" mnemonicParsing="false" onAction="#pressExitGameButton" prefHeight="80.0" prefWidth="204.0" style="-fx-background-color: WHITE;" text="Exit Game" textAlignment="CENTER" textFill="#d30000">
+               <font>
+                  <Font name="Sinhala MN" size="26.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="145.0" layoutX="157.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="492.0" />
+            <Text fill="#e11212" fontSmoothingType="LCD" layoutX="174.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONGRATULATION!" wrappingWidth="516.5135040283203">
+               <font>
+                  <Font name="Sinhala MN" size="48.0" />
+               </font>
+            </Text>
+            <Text layoutX="224.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You successfully protected your Base" textAlignment="CENTER" wrappingWidth="361.16851806640625">
+               <font>
+                  <Font name="Sinhala MN" size="20.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="180.0" layoutX="159.0" layoutY="311.0" stroke="BLACK" strokeType="INSIDE" width="289.0" />
+            <Label layoutX="174.0" layoutY="334.0" text="Money spent:">
+               <font>
+                  <Font name="Sinhala Sangam MN" size="18.0" />
+               </font></Label>
+            <Label layoutX="175.0" layoutY="422.0" text="Enemies killed:">
+               <font>
+                  <Font name="Sinhala Sangam MN" size="18.0" />
+               </font></Label>
+            <Label layoutX="175.0" layoutY="379.0" text="Health left:">
+               <font>
+                  <Font name="Sinhala Sangam MN" size="18.0" />
+               </font></Label>
+            <Label fx:id="moneySpent" layoutX="313.0" layoutY="334.0" prefHeight="25.0" prefWidth="102.0" text="money label">
+               <font>
+                  <Font name="Sinhala Sangam MN" size="18.0" />
+               </font></Label>
+            <Label fx:id="enemyKilled" layoutX="313.0" layoutY="422.0" text="health label">
+               <font>
+                  <Font name="Sinhala Sangam MN" size="18.0" />
+               </font></Label>
+            <Label fx:id="baseHealth" layoutX="313.0" layoutY="379.0" text="enemy label">
+               <font>
+                  <Font name="Sinhala Sangam MN" size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
